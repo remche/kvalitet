@@ -1,0 +1,13 @@
+{% load workflow_tags %}
+Bonjour,
+
+<p>Vous recevez ce mail en tant que {{ role }}. <br/>
+La commande vient de passer à l'étape suivante : <br />
+<strong> {{ fchach|state_str:state }} </strong>
+
+<p>Commentaires: {{ fchach.comments }} </p>
+<p>Vous pouvez aussi retrouver la fiche <a href="https://{{ current_site.domain}}{% url fchach_detail_view fchach.id %}">ici</a>
+<!-- TODO: passer en https -->
+</p>
+
+{% include "fchach/mail/email-fiche-inc.html"  %} 

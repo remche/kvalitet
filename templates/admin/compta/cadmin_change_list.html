@@ -1,0 +1,20 @@
+{% extends "admin/change_list.html" %}
+
+{% block breadcrumbs %}
+{% if user.is_superuser %}
+{{ block.super }}
+{% endif %}
+{% endblock %}
+
+{% block content%}
+{% url admin:compta_fournisseur_changelist as admin_fournisseur_list %}
+	{# TODO : mettre url home #}
+	<h2><a href="/">Retour au site</a></h2>
+	 {% ifequal admin_fournisseur_list request.path %}
+	 <h2> <a href="{% url cadmin:import-fournisseurs %}">Importer un nouveau fichier Fournisseurs </a></h2>
+	 {% endifequal %}
+	{% with None as action_form %}
+	{{ block.super }}
+	{% endwith %}
+{% endblock %}
+

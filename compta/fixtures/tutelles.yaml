@@ -1,0 +1,21 @@
+- model: compta.tutelle
+  pk: 1
+  fields:
+    nom: CNRS
+- model: compta.tutelle
+  pk: 2
+  fields:
+    nom: INPG
+- model: compta.tutelle
+  pk: 3
+  fields:
+    nom: INPG-SA
+- model: compta.tutelle
+  pk: 4
+  fields:
+    nom: UJF
+- model: compta.tutelle
+  pk: 5
+  fields:
+    nom: Floralis
+

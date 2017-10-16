@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+
+{% url fchach_my_list_view as url_my %}
+{% url fchach_client_list_view as url_client %}
+{% url fchach_attente_list_view as url_attente %}
+{% url fchach_closed_list_view as url_closed %}
+
+
+{% ifequal request.path url_my %}
+<div class="mesfiches">
+	{% include "fchach/fchach_list_inc.html" with titre="Mes fiches"  %}
+</div>
+{% endifequal %}
+
+
+
+{% ifequal request.path url_client %}
+<div class="client">
+	{% include "fchach/fchach_list_inc.html" with titre="Fiches dont je suis le client" fchach_list=client_fchach %}
+</div>
+{% endifequal %}
+
+
+
+{% ifequal request.path url_attente %}
+<div class="attente">
+	{% include "fchach/fchach_list_inc.html" with titre="Fiches en attente d'une action de ma part" fchach_list=next_user_fchach %}
+</div>
+{% endifequal %}
+
+
+
+{% ifequal request.path url_closed %}
+<div class="attente">
+	{% include "fchach/fchach_list_inc.html" with titre="Fiches closes" fchach_list=closed_fchach %}
+</div>
+{% endifequal %}
+
+
+{% endblock %}

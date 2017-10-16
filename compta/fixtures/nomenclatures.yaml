@@ -1,0 +1,447 @@
+- model: compta.nomenclaturecat
+  pk: 1
+  fields:
+    nom: FOURNITURES, CONSOMMABLES, PERIPHERIQUES ET PIECES DETACHEES POUR L'INFORMATIQUE
+    numero: 40.0
+
+- model: compta.nomenclaturecat
+  pk: 2
+  fields:
+    nom: MATERIELS ET EQUIPEMENTS INFORMATIQUE ASSEMBLES
+    numero: 40.1
+
+- model: compta.nomenclaturecat
+  pk: 3
+  fields:
+    nom: SERVEURS
+    numero: 40.2
+
+- model: compta.nomenclaturecat
+  pk: 4
+  fields:
+    nom: SERVICES POUR L'INFORMATIQUE
+    numero: 40.3
+
+- model: compta.nomenclaturecat
+  pk: 5
+  fields:
+    nom: PROGICIELS
+    numero: 40.4
+
+- model: compta.nomenclaturecat
+  pk: 6
+  fields:
+    nom: MATERIEL, EQUIPEMENTS ET SERVICES POUR RESEAUX INFORMATIQUES
+    numero: 40.5
+
+- model: compta.nomenclaturecat
+  pk: 7
+  fields: 
+    nom: CONSOMMABLES DE LABORATOIRE
+    numero: 51.0
+
+- model: compta.nomenclaturecat
+  pk: 8
+  fields: 
+    nom: PETITS MATERIELS ET PETITS EQUIPEMENTS DE PAILLASSE
+    numero: 51.1
+
+- model: compta.nomenclaturecat
+  pk: 9
+  fields:
+    nom: MACHINES ET EQUIPEMENTS
+    numero: 35.0
+
+- model: compta.nomenclaturecat
+  pk: 10
+  fields:
+    nom: EQUIPEMENTS / MACHINES THERMIQUES DE LABORATOIRE
+    numero: 53.0
+
+- model: compta.nomenclaturecat
+  pk: 11
+  fields:
+    nom: EQUIPEMEMENTS / MATERIELS DE TRAITEMENT DES GAZ, DE L'AIR, DE L'EAU ET AUTRES FLUIDES
+    numero: 53.1
+
+- model: compta.nomenclaturecat
+  pk: 12
+  fields:
+    nom: AUTRES GROS EQUIPEMENTS DE LABORATOIRE
+    numero: 53.2
+
+- model: compta.nomenclaturecat
+  pk: 13
+  fields:
+    nom: REPARATION ET MAINTENANCE DES GROS EQUIPEMENTS DE LABORATOIRE
+    numero: 53.3
+
+
+# 40.0
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: COMPOSANTS, PERIPHERIQUES ET ACCESSOIRES POUR ORDINATEURS (imprimante)
+    numero: 40.01
+    categorie: 1
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: COMPOSANTS POUR LE STOCKAGE 
+    numero: 40.02
+    categorie: 1
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: CONSOMMABLES POUR L'INFORMATIQUE
+    numero: 40.03
+    categorie: 1
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: CAPTEURS POUR LA REALITE VIRTUELLE
+    numero: 40.04
+    categorie: 1
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: CAPTEURS POUR LA ROBOTIQUE
+    numero: 40.05
+    categorie: 1
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: ACTIONNEURS
+    numero: 40.06
+    categorie: 1
+
+# 40.1
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: MICRO-ORDINATEURS ET STATIONS DE TRAVAIL (petits serveurs d'application) ecran
+    numero: 40.11
+    categorie: 2
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: APPAREILS MOBILES - ORDINATEURS PORTABLES, PDA, TABLETTES
+    numero: 40.12
+    categorie: 2
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: POSTES D'ACQUISITION DE DONNEES ET STATIONS DE TRAVAIL A USAGE SCIENTIFIQUE
+    numero: 40.13
+    categorie: 2
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: EQUIPEMENTS DE VISIO-CONFERENCE
+    numero: 40.14
+    categorie: 2
+
+#40.2
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: SERVEURS (moyens et gros serveurs)
+    numero: 40.21
+    categorie: 3
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: SYSTEMES POUR LE STOCKAGE ET LA SAUVEGARDE DE DONNEES - DAS, NAS, SAN, ROBOT,... 
+    numero: 40.22
+    categorie: 3
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: SERVEURS POUR LE CALCUL OU L'EXPLOITATION DE DONNEES SCIENTIFIQUES (et périphériques associés)
+    numero: 40.23
+    categorie: 3
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: SERVEURS HAUTE PERFORMANCE, SUPER CALCULATEURS (et périphériques associés)
+    numero: 40.24
+    categorie: 3
+
+#40.4
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: ACHAT DES DROITS D'UTILISATION DES PROGICIELS DE CONCEPTION ASSISTEE
+    numero: 40.41
+    categorie: 5
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: ACHAT DES DROITS D'UTILISATION DES PROGICIELS POUR SYSTEME ET RESEAUX
+    numero: 40.42
+    categorie: 5
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: ACHAT DES DROITS D'UTILISATION DES PROGICIELS POUR LE DEVELOPPEMENT
+    numero: 40.43
+    categorie: 5
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: ACHAT DES DROITS D'UTILISATION DES PROGICIELS SCIENTIFIQUES
+    numero: 40.44
+    categorie: 5
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: ACHAT DES DROITS D'UTILISATION DES AUTRES PROGICIELS
+    numero: 40.45
+    categorie: 5
+
+#40.5
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: PETITS EQUIPEMENTS DE RESEAUX INFORMATIQUES
+    numero: 40.51
+    categorie: 6
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: EQUIPEMENTS DE RESEAUX INFORMATIQUES
+    numero: 40.52
+    categorie: 6
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: EQUIPEMENTS DE TRANSMISSION DE DONNEES SANS FIL (dont bornes Wi-Fi)
+    numero: 40.53
+    categorie: 6
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: ANALYSEURS
+    numero: 40.54
+    categorie: 6
+
+
+#51.0
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: CONSOMMABLES POUR CULTURE  CELLULAIRE 
+    numero: 51.01
+    categorie: 7
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: CONSOMMABLES EN PLASTIQUE ET EN VERRE HORS CULTURE CELLULAIRE
+    numero: 51.02
+    categorie: 7
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: CONSOMMABLES POUR LA FILTRATION ET LA DIALYSE
+    numero: 51.03
+    categorie: 7
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: AUTRES CONSOMMABLES DE LABORATOIRE 
+    numero: 51.04
+    categorie: 7
+
+#51.1
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: VERRERIE DE LABORATOIRE, PLASTIQUE REUTILISABLE, MATERIELS EN CERAMIQUE, METAUX ET MINERAUX 
+    numero: 51.11
+    categorie: 8
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: PETITS EQUIPEMENTS DE PAILLASSE ET ACCESSOIRES
+    numero: 51.12
+    categorie: 8
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: PETITS EQUIPEMENTS ET ACCESSOIRES DE PREPARATION D'ECHANTILLONS POUR MICROSCOPIE
+    numero: 51.13
+    categorie: 8
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: PETITS EQUIPEMENTS D' HYGIENE ET SECURITE
+    numero: 51.14
+    categorie: 8
+
+
+#35.0
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: EQUIPEMENTS MECANIQUES
+    numero: 35.01
+    categorie: 9
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: MACHINES D'USAGE GENERAL
+    numero: 35.02
+    categorie: 9
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: MATERIELS DE LEVAGE ET DE MANUTENTION
+    numero: 35.03
+    categorie: 9
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: ASCENSEURS ET MONTE CHARGES
+    numero: 35.04
+    categorie: 9
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: MACHINES AGRICOLES
+    numero: 35.05
+    categorie: 9
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: MACHINES-OUTILS
+    numero: 35.06
+    categorie: 9
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: MACHINES POUR L'IMPRIMERIE
+    numero: 35.07
+    categorie: 9
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: AUTRES MACHINES D'USAGE SPECIFIQUE
+    numero: 35.08
+    categorie: 9
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: APPAREILS DOMESTIQUES
+    numero: 35.09
+    categorie: 9
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: BANCS D'ESSAIS, MOYENS DE TEST, GROUPES DE GENERATIONS AUXILIAIRES
+    numero: 35.10
+    categorie: 9
+
+
+#53.0
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: MACHINES ET EQUIPEMENTS GENERATEURS DE CHALEUR POUR L'EXPERIMENTATION
+    numero: 53.01
+    categorie: 10
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: MATERIELS ET ACCESSOIRES GENERATEURS ET REGULATEURS DE FROID (HORS CRYOGENIE) POUR L'EXPERIMENTATION
+    numero: 53.02
+    categorie: 10
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: MATERIELS ET ACCESSOIRES POUR LA CRYOGENIE ET LA CRYOCONSERVATION (Températures < -100°C)
+    numero: 53.03
+    categorie: 10
+
+
+#53.1
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: MATERIELS POUR LE TRAITEMENT DES GAZ ET DE L'AIR, DE CLIMATISATION, DE SALLE BLANCHE
+    numero: 53.11
+    categorie: 11
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: MATERIELS ET ACCESSOIRES POUR LE TRAITEMENT DE L'EAU, ET AUTRES LIQUIDES
+    numero: 53.12
+    categorie: 11
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: ENCEINTES DE CONFINEMENT ET EQUIPEMENT DE PROTECTION A FILTRATION
+    numero: 53.13
+    categorie: 11
+
+#53.2
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: MATERIELS POUR DESINFECTION, STERILISATION ET LAVAGE DES INSTRUMENTS
+    numero: 53.21
+    categorie: 12
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: GROS EQUIPEMENTS D'AGITATION, DE FRACTIONNEMENT ET DE BROYAGE (ACHAT, REPARATION, MAINTENANCE)
+    numero: 53.22
+    categorie: 12
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: PLANS DE TRAVAIL, RANGEMENTS DE LABORATOIRE ET GROS EQUIPEMENTS DE SECURITE HORS 53.11 (ACHAT, REPARATION, MAINTENANCE)
+    numero: 53.23
+    categorie: 12
+
+#53.3
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: REPARATION ET MAINTENANCE DES EQUIPEMEMENTS / MACHINES THERMIQUES DE LABORATOIRE (54.01, 54.02, et 54.03)
+    numero: 53.31
+    categorie: 13
+
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: REPARATION ET MAINTENANCE DES MATERIELS DE TRAITEMENT DES GAZ ET DE L'AIR, DE CLIMATISATION, DE SALLE BLANCHE
+    numero: 53.32
+    categorie: 13
+
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: REPARATION ET MAINTENANCE DES SYSTEMES DE TRAITEMENT DE L'EAU ET AUTRES FLUIDES
+    numero: 53.33
+    categorie: 13
+
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: REPARATION ET MAINTENANCE DES ENCEINTES DE CONFINEMENT ET EQUIPEMENT DE PROTECTION A FILTRATION 
+    numero: 53.34
+    categorie: 13
+
+- model: compta.nomenclature
+  pk: null
+  fields:
+    nom: REPARATION ET MAINTENANCE DES MATERIELS DE STERILISATION, DESINFECTION ET LAVAGE
+    numero: 53.35
+    categorie: 13
+
+
+
+
+
+
+

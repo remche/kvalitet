@@ -1,0 +1,42 @@
+<div class="container">
+
+	<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	</a>
+
+	<a href="/" class="brand">Système qualité</a>
+	<div class="nav-collapse">
+		<div class="container">
+			<ul class="nav">
+				{% url fchach_tableau_view as fchach_url %}
+				{% url gen_tableau_view as gen_url %}
+				<li {% ifequal gen_url request.path %}class="active"{% endifequal %}>
+				<a href="{{ gen_url }}">Accueil</a>
+				</li>
+				<li {% if fchach_url in request.path %}class="active"{% endif %}>
+				<a href="{{ fchach_url }}">Achats</a>
+				</li>
+				<li class="divider-vertical"></li>
+			</ul>
+			{%  if user.is_authenticated %}						
+			<ul class="nav pull-right">
+				<li>
+				<form class="navbar-search">
+				    <input type="text" class="search-query input-small" placeholder="Rechercher">
+			    	</form>
+			    	</li>
+				<li class="dropdown">
+				  <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ user.first_name  }} {{ user.last_name }}<b class="caret"></b></a>
+				  <ul class="dropdown-menu">
+					  <a href=""><i class="icon-user"></i> Profil</a>
+					  <a href="{% url logout %}"><i class="icon-off"></i> Se déconnecter</a>
+				  </ul>
+				</li>
+			</ul>
+			{% endif %}
+		</div>
+	</div>
+</div>
+

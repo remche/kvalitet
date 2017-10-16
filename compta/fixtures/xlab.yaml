@@ -1,0 +1,17 @@
+- model: compta.matierexlab
+  pk: 1
+  fields:
+    nom: matiere1
+    numero: 213
+
+- model: compta.matierexlab
+  pk: 2
+  fields:
+    nom: matiere2
+    numero: 213342
+
+- model: compta.matierexlab
+  pk: 3
+  fields:
+    nom: matiere3
+    numero: 21343

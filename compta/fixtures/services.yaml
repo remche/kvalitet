@@ -1,0 +1,55 @@
+- model: compta.service
+  pk: 1
+  fields:
+    nom: Services communs
+    tresorier: [smartinato]
+    chef: [jdesrues]
+    secretaire: [smezenner]
+
+- model: compta.service
+  pk: 2
+  fields:
+    nom: ComHet
+    tresorier: [rpeyroux]
+    chef: [rpeyroux]
+    secretaire: [sclaraz]
+
+- model: compta.service
+  pk: 3
+  fields:
+    nom: GDR
+    tresorier: [ssalager]
+    chef: [ssalager]
+    secretaire: [creverdit]
+
+- model: compta.service
+  pk: 4
+  fields:
+    nom: GEO
+    tresorier: [ojenck]
+    chef: [femeriault]
+    secretaire: [creverdit]
+
+- model: compta.service
+  pk: 5
+  fields:
+    nom: Medina
+    tresorier: [bchareyre]
+    chef: [bchareyre]
+    secretaire: [creverdit]
+
+- model: compta.service
+  pk: 6
+  fields:
+    nom: RVo
+    tresorier: [jbaroth]
+    chef: [ymalecot]
+    secretaire: [creverdit]
+
+- model: compta.service
+  pk: 7
+  fields:
+    nom: 2MSMC
+    tresorier: [dimbault]
+    chef: [dimbault]
+    secretaire: [sclaraz]

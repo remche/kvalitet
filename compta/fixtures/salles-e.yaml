@@ -1,0 +1,485 @@
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: LABO E010
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: LABO E026
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E025
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E024
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: LABO E009
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: LABO E011 
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: LOGI E027
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E023
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: LABO E008A
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: DETE E029
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: LOGI E028
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E022
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E021
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: LABO E005A
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: LABO E005B
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: LABO E005C
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: LABO E002B
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: LABO E008B
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: LOGI E031
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: LOGI EO30
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E020
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: LOGI E017
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E019
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: LOGI E037
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: LOGI E036
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: LABO E035
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: LOGI E006
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E038
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E039
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E040
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E041
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E042
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E043
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E009
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: LOGI E010
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E010
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E012
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E151
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E120
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E119
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E118
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E150
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E152
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E115A
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E117
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E116
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E123A
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E123B
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E130
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E115B
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E115
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E124
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E129
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E113
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E128
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E114
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E112
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E111
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E103A
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E103B
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: LABO E149
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E128
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: DETE E127
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E140
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E141
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E142
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E143
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E144
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E131
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E132
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E133
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E134
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E135
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E136
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E137
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E138
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E139
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E145
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E146
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E147
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 1
+    nom: BURO E148

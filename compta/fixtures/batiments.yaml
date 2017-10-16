@@ -1,0 +1,9 @@
+- model: compta.batiment
+  pk: 1
+  fields:
+    nom: E
+
+- model: compta.batiment
+  pk: 2
+  fields:
+    nom: I

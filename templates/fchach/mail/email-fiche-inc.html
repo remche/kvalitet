@@ -1,0 +1,36 @@
+
+{% include "fchach/mail/email-fiche-css.html" %}
+
+{% load workflow_tags %}
+
+<div name="fiche" class="hero-unit">
+	<div class="row">
+		<div class="span12">
+		Fiche n° {% if fchach.is_history %}  {{ fchach.fchqual.id }}
+       		{% else %} {{ fchach.id }}
+	       	{% endif %} - version {{ fchach.version }}
+		<h2>{{ fchach.titre }} </h2> 
+		</div>
+	</div>
+	<div class="row">
+		<div class="span6"> Créée par: {{ fchach.created_by.first_name}} {{ fchach.created_by.last_name}}</div> 
+		<div class="span6"> Date de création: {{ fchach.creation_date}}</div>
+	</div>
+	<hr>
+	<div class="row">
+		<div class="span6"> Client : {{ fchach.client.first_name }} {{ fchach.client.last_name }} </div>
+		<div class="span6"> Équipe : {{ fchach.team }} </div>
+	</div>
+	<div class="row">
+		<div class="span6"> Entité : {{ fchach.entite }} </div>
+		<div class="span6"> Ligne : {{ fchach.ligne }} </div>
+	</div>
+	<div class="row">
+		<div class="span6"> Fournisseur : {{ fchach.fournisseur }} </div>
+	</div>
+	<div class="row">
+		<div class="span12"> {% include "fchach/fchach_prod_table_inc.html" with output="html" %} </div>
+	</div>
+</div>
+
+

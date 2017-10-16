@@ -1,0 +1,14 @@
+{% load workflow_tags %}
+{% load produits_tags %}
+Bonjour,
+
+Vous recevez ce mail en tant que {{ role }}.
+La commande vient de passer à l'étape suivante :
+*{{ fchach|state_str:state }}*
+Commentaires: {{ fchach.comments }}
+Vous pouvez retrouver la fiche ici : https://{{ current_site.domain}}{% url fchach_detail_view fchach.id %}
+
+{{ fchach.titre }}
+Créée par: {{ fchach.created_by.first_name}} {{ fchach.created_by.last_name}}
+Client : {{ fchach.client.first_name }} {{ fchach.client.last_name }} 
+Total : {{ produits|total }}

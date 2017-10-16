@@ -1,0 +1,521 @@
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: BURO I120
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: BURO I119
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: BURO I118
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: BURO I117
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: BURO I116B
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: BURO I116A
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: BURO I111
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: BURO I110
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: BURO I109
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: BURO I108
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: BURO I107
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: BURO I106
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: BURO I105
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: BURO I104
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: BURO I103
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: BURO I102
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: BURO I101
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: LABO I144
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: LOGI I148
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: BURO I132
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: BURO I133
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: BURO I134
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: BURO I135
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: BURO I136
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: BURO I137
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: BURO I138
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: BURO I139
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: BURO I140
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: BURO I141
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: BURO I142
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: BURO I143
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: BURO I126
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: BURO I127
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: BURO I128
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: BURO I129
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: BURO I130
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: BURO I131
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: DETE I122
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: LABO I123
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: BURO I125
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: LABO I124A
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: LABO I124B
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: LABO I124C
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: LABO I018B
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: BURO I018A
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: BURO I017
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: LABO I016
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: LOGI I015
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: LABO I013
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: LABO I020
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: LABO I019
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: LABO I038A
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: LABO I038B
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: LABO I028C
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: LABO I040B
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: LABO I040A
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: LABO I035B
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: LABO I035A
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: LABO IO1O
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: LABO I009
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: LABO I008
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: LABO I007
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: LABO I006
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: LABO IOO5
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: LABO I004
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: LABO I034A
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: LABO I034B
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: BURO I022
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: BURO I023
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: BURO I024
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: BURO I025
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: BURO I026
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: BURO I027
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: BURO I028
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: LOGI I036B
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: LOGI I036A
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: LABO I037
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: LABO I039B
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: LABO I039A
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: BURO I029
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: BURO I030
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: BURO I031
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: BURO I032
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: LABO I033
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: LABO I033A
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: LABO I033B
+
+- model: compta.salle
+  pk: null
+  fields:
+    batiment: 2
+    nom: LABO IO33C

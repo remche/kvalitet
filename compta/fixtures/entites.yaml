@@ -1,0 +1,12 @@
+- model: compta.entite
+  pk: 1
+  fields:
+    nom: projet1
+- model: compta.entite
+  pk: 2
+  fields:
+    nom: prjet2
+- model: compta.entite
+  pk: 3
+  fields:
+    nom: projet3

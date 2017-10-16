@@ -1,0 +1,16 @@
+- model: compta.directeur
+  pk: 1
+  fields:
+    directeur: [rtest] 
+- model: compta.directeuradj
+  pk: 1
+  fields:
+    directeur_adj: [rcailletaud]
+- model: compta.directeuradj
+  pk: 2
+  fields:
+    directeur_adj: [rcailletaud]
+- model: compta.comptable
+  pk: 1
+  fields:
+    comptable: [rcailletaud]

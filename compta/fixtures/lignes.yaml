@@ -1,0 +1,7 @@
+- model: compta.ligne
+  pk: 1
+  fields:
+    nom: ligne1
+    service: 1
+    responsable: [rcailletaud]
+    tutelle: 1

@@ -1,0 +1,82 @@
+{%  if user.is_authenticated %}
+<ul class="well nav nav-list">
+
+    <li class="nav-header">
+	<span data-target="#actions" data-toggle="collapse">
+          <a>Actions rapides</a>
+	  <span class="caret pull-right"></span>
+        </span>  
+    </li>
+    {% url fchach_new_view as fchach_new_url %}
+
+    {% if view_type_menu == 'actions' %}
+    <ul class="nav nav-list collapse in" id="actions" >
+    {% else %}
+    <ul class="nav nav-list collapse" id="actions" >
+    {% endif %}
+    <li {% ifequal fchach_new_url request.path %}class="active"{% endifequal %}>
+        <a href="{{ fchach_new_url }}"><i class="icon-shopping-cart"></i>Fiche achat</a>
+    </li>
+    <li><a href="#"><i class="icon-road"></i>Fiche mission</a></li>
+    <li><a href="#"><i class="icon-user"></i>Fiche individuelle</a></li>
+    </ul>
+
+    <li class="divider"></li>
+
+    {% url fchach_tableau_view as fchach_tab_url %}
+    {% url fchach_attente_list_view as fchach_attente_url %}
+    {% url fchach_my_list_view as fchach_my_url %}
+    {% url fchach_client_list_view as fchach_client_url %}
+    {% url fchach_closed_list_view as fchach_closed_url %}
+
+    <li class="nav-header" id="#achats_header">
+        <span data-target="#achats" data-toggle="collapse">
+          <a>Achats</a>
+	  <span class="caret pull-right"></span>
+        </span>  
+    </li>
+    {% if view_type_menu == 'achats' %}
+    <ul class="nav nav-list collapse in" id="achats" >
+    {% else %}
+    <ul class="nav nav-list collapse" id="achats" >
+    {% endif %}
+	    <li {% ifequal fchach_tab_url request.path %}class="active"{% endifequal %}>
+	    <a href="{{ fchach_tab_url }}">Tableau de bord</a>
+	    </li>
+	    <li {% ifequal fchach_attente_url request.path %}class="active"{% endifequal %}>
+	    <a href="{{ fchach_attente_url }}">En attente <span class="badge badge-error">{{ next_user_fchach|length }}</span></a>
+	    </li>
+	    <li {% ifequal fchach_my_url request.path %}class="active"{% endifequal %}>
+	    <a href="{{ fchach_my_url }}">Fiches auteur <span class="badge">{{ fchach_list|length }}</span></a>
+	    </li>
+	    <li {% ifequal fchach_client_url request.path %}class="active"{% endifequal %}>
+	    <a href="{{ fchach_client_url }}">Fiches client <span class="badge">{{ client_fchach|length }}</span></a>
+	    </li>
+	    <li {% ifequal fchach_closed_url request.path %}class="active"{% endifequal %}>
+	    <a href="{{ fchach_closed_url }}">Fiches closes <span class="badge">{{ closed_fchach|length }}</span></a>
+	    </li>
+    </ul>
+    <!--{{ perms.compta.change_ligne }}-->
+
+    {% if perms.compta %}
+    <li class="divider"></li>
+    <li class="nav-header">
+    <span data-target="#admin" data-toggle="collapse">
+        <a>Administration</a>
+	<span class="caret pull-right"></span>
+    </span>
+    </li>
+    <ul class="nav nav-list collapse" id="admin" >
+	    <li><a href="{% url cadmin:compta_service_changelist %}"><i class="icon-forward"></i>Équipes</a></li>
+	    <li><a href="{% url cadmin:compta_ligne_changelist %}"><i class="icon-forward"></i>Lignes</a></li>
+	    <li><a href="{% url cadmin:compta_entite_changelist %}"><i class="icon-forward"></i>Entités</a></li>
+	    <li><a href="{% url cadmin:compta_matierexlab_changelist %}"><i class="icon-forward"></i>Matières XLAB</a></li>
+	    <li><a href="{% url cadmin:compta_nomenclature_changelist %}"><i class="icon-forward"></i>Nomenclatures</a></li>
+	    <li><a href="{% url cadmin:compta_fournisseur_changelist %}"><i class="icon-forward"></i>Fournisseurs</a></li>
+    </ul> 
+    {% endif %}
+
+
+
+</ul>
+{% endif %}

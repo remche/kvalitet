@@ -1,0 +1,35 @@
+{% load workflow_tags %}
+{% load produits_tags %}
+Bonjour,
+
+{% if state == 1 %}
+Vous recevez ce mail car vous êtes le {{ role }} de la commande ci-dessous.
+{% else %}
+Vous recevez ce mail en tant que {{ role }}.
+{% endif %}
+
+La commande vient de passer à l'étape suivante :
+*{{ fchach|state_str:state }}*
+
+{% if fchach.message %}
+Message de {{ user.first_name }} {{ user.last_name }}: {{ fchach.message }}
+{% endif %}
+
+{% if resp_ligne %}
+Pour approuver cette demande, répondez simplement à ce mail sans le modifier. Vous pouvez aussi retrouver la fiche ici : https://{{ current_site.domain}}{% url fchach_edit_view fchach.id %}
+{% else %}
+*Attention, la ligne n'étant pas spécifiée, vous devez le faire ici : https://{{ current_site.domain}}{% url fchach_edit_view fchach.id %}*
+{% endif %}
+
+<!-- TODO: passer en https -->
+
+{{ fchach.titre }}
+Créée par: {{ fchach.created_by.first_name}} {{ fchach.created_by.last_name}}
+Client : {{ fchach.client.first_name }} {{ fchach.client.last_name }} 
+Total : {{ produits|total }}
+Commentaires: {{ fchach.comments }}
+
+--
+Ne touchez pas à cette partie du message
+ACHSTATE:{{state}}|ACHID:{{key}}
+

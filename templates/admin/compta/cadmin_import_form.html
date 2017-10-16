@@ -1,0 +1,36 @@
+{% extends "admin/base_site.html" %}
+{% load i18n admin_static admin_modify %}
+{% load url from future %}
+{% load admin_urls %}
+
+{% block extrahead %}{{ block.super }}
+{% url 'admin:jsi18n' as jsi18nurl %}
+<script type="text/javascript" src="{{ jsi18nurl|default:"../../../jsi18n/" }}"></script>
+{{ media }}
+{% endblock %}
+
+{% block extrastyle %}{{ block.super }}<link rel="stylesheet" type="text/css" href="{% static "admin/css/forms.css" %}" />{% endblock %}
+
+{% block coltype %}{% if ordered_objects %}colMS{% else %}colM{% endif %}{% endblock %}
+
+{% block bodyclass %}{{ opts.app_label }}-{{ opts.object_name.lower }} change-form{% endblock %}
+
+{% if not is_popup %}
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+<a href="{% url 'cadmin:index' %}">{% trans 'Home' %}</a>
+<h2><a href="/">Retour au site</a></h2>
+</div>
+{% endblock %}
+{% endif %}
+
+{% block content %}<div id="content-main">
+	<h2>Indiquez le fichier à importer. Le fichier doit être au format export XLAB.
+	Attention, l'opération peut être longue</h2>
+<form enctype="multipart/form-data" action="." method="post">{% csrf_token %}{% block form_top %}{% endblock %}
+	{{ form }}
+<div>
+    <input type="submit" name="submit" value="Importer"/>
+</div>
+</form></div>
+{% endblock %}

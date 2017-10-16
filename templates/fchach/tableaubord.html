@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<header class="jumbotron subhead" id="overview"><h1>Tableau de bord - Fiche achat</h1></header>
+
+{% if next_user_fchach %}
+<div class="alert">
+	{% include "fchach/fchach_list_inc.html" with titre="Fiches en attente d'une action de ma part" fchach_list=next_user_fchach %}
+</div>
+{% endif %}
+
+{% if fchach_list %}
+<div class="mesfiches">
+	{% include "fchach/fchach_list_inc.html" with titre="Mes fiches"  %}
+</div>
+{% endif %}
+
+{% if client_fchach %}
+<div class="client">
+	{% include "fchach/fchach_list_inc.html" with titre="Fiches dont je suis le client" fchach_list=client_fchach %}
+</div>
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,33 @@
+{% load workflow_tags %}
+Bonjour,
+
+{% if state == 1 %}
+<p>Vous recevez ce mail car vous êtes le {{ role }} pour la commande ci-dessous. <br/>
+{% else %}
+<p>Vous recevez ce mail en tant que {{ role }}. <br/>
+{% endif %}
+
+La commande vient de passer à l'étape suivante : <br />
+<strong> {{ fchach|state_str:state }} </strong>
+</p>
+{% if fchach.message %}
+<p class="text-error"><strong>Message de {{ user.first_name }} {{ user.last_name }}:</strong> {{ fchach.message }}</p>
+{% endif %}
+
+{% if resp_ligne %}
+<p>Pour approuver cette demande, répondez simplement à ce mail sans le modifier. Vous pouvez aussi retrouver la fiche <a href="https://{{ current_site.domain}}{% url fchach_edit_view fchach.id %}">ici</a>
+{% else %}
+<p><strong>Attention, la ligne n'étant pas spécifiée, vous devez le faire <a href="https://{{ current_site.domain}}{% url fchach_edit_view fchach.id %}">ici</a></strong>
+{% endif %}
+
+</p>
+
+
+{% include "fchach/mail/email-fiche-inc.html"  %} 
+<p>Commentaires: {{ fchach.comments }} </p>
+
+<div style="visibility: hidden"> 
+--
+Ne touchez pas à cette partie du message
+ACHSTATE:{{state}}|ACHID:{{key}}
+</div>

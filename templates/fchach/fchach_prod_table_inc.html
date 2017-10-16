@@ -1,0 +1,20 @@
+{% load produits_tags %}
+<br>
+{% ifequal output "html" %}<div style="overflow-x: auto; white-space: nowrap;">
+	<table class="table table-striped table-bordered table-condensed view-responsive">
+{% endifequal %}
+{% ifequal output "pdf" %}<table border="1" style="background: #eee; padding: 2px;">{% endifequal %}
+<thead align="left">
+	<th>Produits</th><th>Prix</th><th id="quantite">Quantité</th><th>Total</th>
+</thead>
+<tbody>
+{% for prod in produits %}
+<tr><td>{{ prod.produit }} </td><td>{{ prod.prixht }}</td><td>{{ prod.quantite }}</td><td>{{ prod.total }}</td></tr>
+{% endfor %}
+<tr><td colspan="3"><b>Total :</b> </td><td>{{ produits|total }}</td></tr>
+</tbody>
+</table>
+
+{% ifequal output "html"%}
+</div>
+{% endifequal %}

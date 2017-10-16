@@ -1,0 +1,26 @@
+<html><head>
+</head>
+<body>
+<div name="fiche" class="hero-unit">
+	Fiche achat n° {{ fchach.id }}
+	<h2>{{ fchach.titre }} </h2> 
+	<table  style="padding: 2px;">
+		<tr>
+		<td> Créée par: {{ fchach.created_by.first_name}} {{ fchach.created_by.last_name}}</td> 
+		<td> Date de création: {{ fchach.creation_date}}</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td> Dernière modification: {{ fchach.modification_date}}</td>
+	</tr>
+	<tr>
+		<td colspan="2">		{% include "fchach/fchach_prod_table_inc.html"  with output="pdf" %}
+		</td>
+	<tr>
+		<td> Commentaires: {{ fchach.comments }} </td>
+
+	</tr>
+</table>
+</div>
+</body>
+</html>

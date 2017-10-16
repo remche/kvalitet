@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% load workflow_tags %}
+
+{% block content %}
+{% include "fchach/fchach_back_inc.html" %}
+<div name="fiche" class="hero-unit">
+	<div class="row">
+		<div class="span8">
+		Fiche n° {% if fchach.is_history %}  {{ fchach.fchqual.id }}
+       		{% else %} {{ fchach.id }}
+	       	{% endif %} - version {{ fchach.version }}
+		<h2>{{ fchach.titre }} </h2> 
+		</div>
+	</div>
+	<div class="row">
+		<div class="span4"> Créée par: {{ fchach.created_by.first_name}} {{ fchach.created_by.last_name}}</div> 
+		<div class="span4"> Date de création: {{ fchach.creation_date}}</div>
+	</div>
+	<div class="row">
+		<div class="span4"> État: {{ fchach|state_str }} </div>
+		<div class="span4"> Dernière modification: {{ fchach.modification_date}}</div>
+	</div>
+	<hr>
+	<div class="row">
+		<div class="span4"> Client : {{ fchach.client.first_name }} {{ fchach.client.last_name }} </div>
+		<div class="span4"> Équipe : {{ fchach.team }} </div>
+	</div>
+	<div class="row">
+		<div class="span4"> Entité : {{ fchach.entite }} </div>
+		<div class="span4"> Ligne : {{ fchach.ligne }} </div>
+	</div>
+	<div class="row">
+		<div class="span4"> Fournisseur : {{ fchach.fournisseur }} </div>
+	</div>
+	<div class="row">
+		<div class="span8"> {% include "fchach/fchach_prod_table_inc.html" with output="html" %} </div>
+	</div>
+	<hr>
+	<div class="row">
+		<div class="span8"> Commentaires: {{ fchach.comments }} </div>
+	</div>
+	<div class="row">
+		<div class="span8"> Emplacement: {{ fchach.emplacement }} </div>
+	</div>
+</div>
+{% if not fchach.is_history and fchach.state == -1 %}<a href="{% url fchach_pdf_view fchach.id  %}"> <i class="icon-file"></i>Export PDF </a>{% endif %}
+
+<div>
+{% for doc in documents %}
+<a href="{{ doc.doc.url }}">{{ doc.filename }}</a>{{ doc.doc.file.size }}<br>
+
+{% endfor %}
+</div>
+<br/>
+<hr>
+{% if history %}
+<h4><i class="icon-time"></i> Historique</h4>
+<div name="history">
+	{% if fchach.is_history %}
+	<a href="{% url fchach_detail_view fchach.fchqual.id %}">Version actuelle</a> Modifiée par {{ fchach.modified_by}} le {{ fchach.modification_date}}<br/>
+	{% endif %}
+	{% for fch in history %}
+	<a href="{% if fchach.is_history %}{% url fchach_detail_version_view fchach.fchqual.id fch.version %}
+		{% else %}{% url fchach_detail_version_view fchach.id fch.version %}
+		{% endif %}" >Version {{ fch.version}}</a> Modifiée par {{ fch.modified_by}} le {{ fch.modification_date}}<br/>
+	{% endfor %}
+</div>
+{% endif %}
+{% endblock %}
+

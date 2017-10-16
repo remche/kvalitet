@@ -1,0 +1,47 @@
+{% load workflow_tags %}
+{% load permissions_tags %}
+
+<h2> {{ titre }} </h2>
+
+{% url fchach_tableau_view as url_tab %}
+{% if fchach_list %}
+
+  <table class="table table-striped">
+	  <thead>
+		  <th> Titre</th><th>Utilisateur</th><th>Date de création</th><th>État</th><th>Prochain acteur</th><th></th>
+	</thead>
+
+	<tbody>
+    {% for fchach in fchach_list %}
+    <tr><td>{{ fchach.titre }}</td>
+	    <td>{{ fchach.created_by.first_name}} {{ fchach.created_by.last_name}}</td>
+	    <td>{{ fchach.creation_date}}</td>
+	    <td>{{ fchach|state_str }}</td>
+	    <td>{{ fchach.next_user.first_name}} {{ fchach.next_user.last_name }}</td>
+	    <td width="100">
+		{% ifequal fchach.state -1 %}
+		<div class="progress progress-success">
+		{% else %}
+		<div class="progress progress-stripped">
+		{% endifequal %}     
+		<div class="bar" style="width: {{ fchach|progress }};"></div>
+    		</div>
+		    
+	    </td>
+	    <td>
+		    <div class="btn-group span2">
+			    	{% comment %} Un peu crado, mais on est obligé car le tag if ne supporte pas les parenthèse {% endcomment %}
+				{% if fchach|can_edit:user %}
+					<a class="btn btn-primary btn-small" href="{% url fchach_edit_view fchach.id %}">Modifier</a>
+				{% else %}
+					<a class="btn btn-primary btn-small disabled">Modifier</a>
+				{% endif %}
+
+			    <a class="btn btn-info btn-small" href="{% url fchach_detail_view fchach.id %}">Voir</a>
+		    </div>
+	    </td>
+    </tr>
+    {% endfor %}
+    	</tbody>
+  </table>
+{% endif %}

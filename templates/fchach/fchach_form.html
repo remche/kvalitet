@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div name="fiche" id="{{ fchach.id }}">
+	{% include "fchach/fchach_back_inc.html" %}
+	{% url fchach_tableau_view as fchach_url %}
+	<strong>Fiche Achat n°  {{ fchach.id }} </strong>
+	{% load crispy_forms_tags %}
+		{% crispy form %}
+</div>
+
+
+{% endblock %}
+
